@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="40dp"
+    android:background="#f5deb3"
+    tools:context=".DrinkFragment">
+
+    <!--  Menampilkan nama minuman  -->
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:text="Es Goyobod"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <!--  Menampilkan gambar minuman  -->
+    <ImageView
+        android:id="@+id/imgDrink"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@+id/tvName"
+        android:src="@drawable/es"
+        android:layout_marginTop="20dp" />
+
+    <!--  Menampilkan deskripsi minuman  -->
+    <TextView
+        android:id="@+id/tvDeskDrink"
+        android:justificationMode="inter_word"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imgDrink"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/black"
+        android:text="Es goyobod sendiri merupakan salah satu sajian minuman dingin khas Jawa Barat, khususnya Garut. Es ini biasa disajikan dalam gelas besar atau mangkuk kecil.
+        Es goyobod terbuat dari perpaduan berbagai bahan seperti tepung, potongan roti tawar, pacar cina, tapai singkong, daging buah kelapa, lengkap dengan kuah santan dan susu kental manis. Perpaduan semuanya menghadirkan rasa gurih sekaligus manis di lidah."
+        android:textSize="18sp" />
+
+</RelativeLayout>

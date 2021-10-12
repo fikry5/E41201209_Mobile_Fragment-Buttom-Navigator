@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="40dp"
+    android:background="#add8e6"
+    tools:context=".FoodFragment">
+
+    <!--  Menampilkan nama bandara  -->
+    <TextView
+        android:id="@+id/tvNami"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:text="BIJB Kertajati"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <!--  Menampilkan gambar bandara  -->
+    <ImageView
+        android:id="@+id/imgAirport"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:layout_marginLeft="21dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
+        android:layout_below="@+id/tvNami"
+        android:src="@drawable/bijb"/>
+
+    <!--  Menampilkan deskripsi bandara  -->
+    <TextView
+        android:id="@+id/tvDeskAirport"
+        android:justificationMode="inter_word"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imgAirport"
+        android:textColor="@color/black"
+        android:text="Bandarudara International Jawa Barat (BIJB) Kertajati terletak di Majalengka, Jawa Barat, Bandara Internasional Jawa Barat dan Aerocity diharapkan menjadi masa depan layanan penerbangan yang didukung oleh sistem yang terintegrasi aksesibilitas jalan raya, kecepatan kereta api, dan pelabuhan. Dengan konsep Aerocity, diharapkan menjadi pusat kegiatan ekonomi yang didukung oleh potensi besar sumber daya alam dan pertanian sehingga bandara ini kelak bertindak sebagai motor penggerak pertumbuhan ekonomi di Jawa Barat."
+        android:textSize="18sp" />
+
+</RelativeLayout>

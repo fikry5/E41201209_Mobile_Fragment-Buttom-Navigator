@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#c0c0c0"
+    tools:context=".HomeFragment">
+
+    <!--  Menampilkan logo Jawa Barat  -->
+    <ImageView
+        android:id="@+id/imgLogo"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/logojabar"
+        android:layout_marginTop="120dp"
+        android:layout_marginLeft="100dp"/>
+
+    <!--  Menampilkan teks Jawa Barat  -->
+    <TextView
+        android:id="@+id/tvJabar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imgLogo"
+        android:gravity="center"
+        android:text="Jawa Barat"
+        android:textColor="@color/black"
+        android:textSize="28sp"
+        android:textStyle="bold" />
+
+    <!--  Membuat slogan bahasa sunda  -->
+    <TextView
+        android:id="@+id/tvSlogan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvJabar"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:text="Silih Asih, Silih Asah jeung Silih Asuh"
+        android:textSize="20sp" />
+
+</RelativeLayout>
